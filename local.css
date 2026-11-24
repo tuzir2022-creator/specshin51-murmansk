@@ -1,0 +1,21 @@
+html { scroll-padding-top: 84px; }
+body { hyphens: none; overflow-wrap: anywhere; }
+.s-hero h1, .s-steps h3 { hyphens: none; }
+.demo-label, .widget-note { color: var(--c-ink-soft); font-size: .875rem; }
+.widget-note, .s-total { margin: 0; }
+.s-rating a { text-underline-offset: 4px; }
+.s-dock { padding-bottom: max(8px, env(safe-area-inset-bottom)); }
+@media (max-width: 960px) {
+  .s-hero__text, .s-hero__widget { min-width: 0; }
+  .s-hero__photo { display: block; margin-top: 18px; }
+  .s-hero__photo img { aspect-ratio: 1.9; }
+  .s-hero__bg { display: none; }
+  .s-hero { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+}
+@media (max-width: 640px) {
+  .demo-label { display: none; }
+  .s-bar__brand { white-space: normal; overflow: visible; text-overflow: clip; line-height: 1.15; }
+  .s-bar__brand i { flex: 0 0 .75em; }
+  .s-widget fieldset { min-width: 0; }
+  .s-widget .s-btn--wide { white-space: normal; text-align: center; }
+}
