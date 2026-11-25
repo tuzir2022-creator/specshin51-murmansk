@@ -5,6 +5,17 @@ body { hyphens: none; overflow-wrap: anywhere; }
 .widget-note, .s-total { margin: 0; }
 .s-rating a { text-underline-offset: 4px; }
 .s-dock { padding-bottom: max(8px, env(safe-area-inset-bottom)); }
+.company-logo { width: 40px; height: 40px; flex: 0 0 40px; object-fit: contain; border-radius: 7px; }
+.has-brand-hero .s-hero__photo img { aspect-ratio: 1.7; object-fit: contain; background: var(--c-surface); }
+.has-brand-hero .s-hero__bg { display: none; }
+.green-street-brand {
+  --c-accent: #a3e54f;
+  --c-accent-deep: #a3e54f;
+  --c-accent-ink: #142205;
+  --f-display: Georgia, 'Times New Roman', serif;
+  --h1k: 1;
+}
+.green-street-brand :is(h1, h2, .s-bar__brand) { font-style: italic; }
 @media (max-width: 960px) {
   .s-hero__text, .s-hero__widget { min-width: 0; }
   .s-hero__photo { display: block; margin-top: 18px; }
